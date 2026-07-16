@@ -1,6 +1,6 @@
 # Smart Attendance System with AI & IoT Embedded System
 
-An advanced, real-time automated attendance system utilizing **Computer Vision (OpenCV)** and **Deep Learning (DeepFace)**[cite: 1, 4]. The system features asynchronous multi-threaded face tracking and recognition, designed to run smoothly on embedded platforms like the **NVIDIA Jetson Nano**.
+An advanced, real-time automated attendance system utilizing **Computer Vision (OpenCV)** and **Deep Learning (DeepFace)**[cite: 1, 4]. The system features asynchronous multi-threaded face tracking and recognition, designed to run smoothly on embedded platforms like the **NVIDIA Jetson Nano**[cite: 3, 4].
 
 ## 🚀 Key Features
 - **Real-time Face Tracking:** Uses OpenCV Haar Cascades for fast, low-latency face detection[cite: 1, 4].
@@ -20,9 +20,9 @@ An advanced, real-time automated attendance system utilizing **Computer Vision (
 
 ## 📁 Repository Structure & File Overview
 
-*   **`capture_aadhaar.py` / `collect_faces.py`**: Handles student enrollment. Captures face samples from the webcam, automatically applies a 20% margin around the face box for DeepFace alignment, and saves them into the `dataset/` directory under the student's ID[cite: 1].
+*   **`capture_aadarsh.py` / `collect_faces.py`**: Handles student enrollment. Captures face samples from the webcam, automatically applies a 20% margin around the face box for DeepFace alignment, and saves them into the `dataset/` directory under the student's ID[cite: 1].
 *   **`recognize.py`**: The core execution script. Starts the camera stream, detects faces, handles asynchronous multi-threaded ArcFace recognition, and draws visual feedback (Green for Recognized, Red for Unknown).
-*   **`train.py` / `debug_compare.py` / `rebuild_db.py`**: Utility scripts to force-trigger DeepFace scans, compute cosine/euclidean similarity distances, and pre-build the vector representation database cache (`.pkl` representations)[cite: 2, 5, 6].
+*   **`train.py` / `debug_compare.py`**: Utility scripts to force-trigger DeepFace scans, compute cosine/euclidean similarity distances, and pre-build the vector representation database cache (`.pkl` representations)[cite: 2, 5, 6].
 
 ---
 
@@ -30,5 +30,5 @@ An advanced, real-time automated attendance system utilizing **Computer Vision (
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/AI-IoT-Attendance-System.git](https://github.com/YOUR_USERNAME/AI-IoT-Attendance-System.git)
-cd AI-IoT-Attendance-System
+git clone [https://github.com/AKChauhan45/attendance_system_integration_with_ai__iot_embedded_system.git](https://github.com/AKChauhan45/attendance_system_integration_with_ai__iot_embedded_system.git)
+cd attendance_system_integration_with_ai__iot_embedded_system
